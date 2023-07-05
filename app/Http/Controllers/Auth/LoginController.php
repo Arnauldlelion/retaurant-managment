@@ -21,7 +21,7 @@ class LoginController extends Controller
        return back()->with('status', 'Invalid login details');
     }
     
-    return redirect()->route('home');
+    return redirect()->route('redirects');
    }
    
 public function authenticated(Request $request, $user)

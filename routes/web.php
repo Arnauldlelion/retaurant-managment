@@ -22,6 +22,8 @@ use GuzzleHttp\Middleware;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
+Route::get('/redirects', [HomeController::class, 'redirects'])->name('redirects');
+
 Route::group(['prefix' =>'admin', 'as' => 'admin.', 'namespace' => 'Admin'], function(){
   
     Route::get('/Auth/register', 'Register\RegisterController@index')->name('register');

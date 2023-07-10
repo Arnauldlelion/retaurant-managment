@@ -30,7 +30,7 @@ Route::group(['prefix' =>'admin', 'as' => 'admin.', 'namespace' => 'Admin'], fun
     
 });
 
-Route::get('/admin/dashboard',[DashboardController::class, 'index'])->name('dashboard')->middleware('auth');
+Route::get('/users',[DashboardController::class, 'user'])->name('users');
 
 Route::get('/register',[RegisterController::class, 'index'])->name('register');
 Route::post('/register',[RegisterController::class, 'store']);

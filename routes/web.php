@@ -32,6 +32,12 @@ Route::group(['prefix' =>'admin', 'as' => 'admin.', 'namespace' => 'Admin'], fun
 
 Route::get('/users',[DashboardController::class, 'user'])->name('users');
 
+Route::get('/foodmenu',[DashboardController::class, 'foodmenu'])->name('foodmenu');
+Route::post('/uploadfood',[DashboardController::class, 'upload'])->name('uploadfood');
+
+
+Route::get('/deleteuser/{id}',[DashboardController::class, 'deleteuser'])->name('dashboard.deleteuser');
+
 Route::get('/register',[RegisterController::class, 'index'])->name('register');
 Route::post('/register',[RegisterController::class, 'store']);
 

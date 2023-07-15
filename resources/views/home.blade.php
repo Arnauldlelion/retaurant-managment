@@ -680,9 +680,9 @@ https://templatemo.com/tm-558-klassy-cafe
                 </div>
                 <div class="col-lg-4 col-xs-12">
                     <div class="left-text-content">
-                        <p>© Copyright Klassy Cafe Co.
+                        <p>© Copyright Beirut Restaurant Co.
                         
-                        <br>Design: TemplateMo</p>
+                        <br>Design: Lelion</p>
                     </div>
                 </div>
             </div>

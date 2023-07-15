@@ -15,7 +15,7 @@
     @include("admin.dashboard.navbar")
     <h1 style="position:relative; top:60px; right:-60px" >Users:</h1>
   <div style="position:relative; top:70px; right:-70px">
-    <table bgcolor="grey" border="3px">
+    <table bgcolor="black" border="3px">
         <tr>
             <th style="padding: 30px;">Name</th>
             <th style="padding: 30px;">Email</th>

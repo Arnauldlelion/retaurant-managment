@@ -28,7 +28,7 @@
 
 <div>
 <label>Old Image</label>
-<img height="150" width="150" src="/foodimage/{{$data->image}}"
+<img height="150" width="150" src="/foodimage/{{$data->image}}">
 </div>
 
 <div>

@@ -43,7 +43,8 @@ Route::get('/deleteuser/{id}',[DashboardController::class, 'deleteuser'])->name(
 Route::get('/updateview/{id}',[DashboardController::class, 'updateview'])->name('dashboard.updateview');
 Route::post('/update/{id}',[DashboardController::class, 'update'])->name('dashboard.update');
 
-
+Route::post('/reservation',[DashboardController::class, 'reservation'])->name('reservation');
+Route::get('/viewreservation',[DashboardController::class, 'viewreservation'])->name('viewreservation');
 
 Route::get('/register',[RegisterController::class, 'index'])->name('register');
 Route::post('/register',[RegisterController::class, 'store']);

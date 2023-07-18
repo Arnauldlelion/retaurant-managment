@@ -17,9 +17,9 @@
   <div style="position:relative; top:70px; right:-70px">
     <table bgcolor="black" border="3px">
         <tr>
-            <th style="padding: 30px;">Name</th>
-            <th style="padding: 30px;">Email</th>
-            <th style="padding: 30px;">Action</th>
+            <th bgcolor="sky blue" style="padding: 30px;">Name</th>
+            <th bgcolor="sky blue" style="padding: 30px;">Email</th>
+            <th bgcolor="sky blue" style="padding: 30px;">Action</th>
         </tr>
         @foreach ($data as $data)
         <tr align="center">

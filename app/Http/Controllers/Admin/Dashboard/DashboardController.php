@@ -9,6 +9,8 @@ use App\Models\User;
 
 use App\Models\Food;
 
+use App\Models\Reservation;
+
 class DashboardController extends Controller
 {
 
@@ -79,6 +81,32 @@ class DashboardController extends Controller
         return redirect()->back(); //redirect back to the previous page using the redirect function.
 
     }
+
+
+    
+
+    
+    public function reservation(Request $request){
+      $data = new reservation; //creates a new reservation object, which represents a reservation order in the database.
+      $data->name=$request->name; // set the values of the $data object's.
+      $data->email=$request->email; 
+      $data->phone=$request->phone; 
+      $data->guest=$request->guest; 
+      $data->date=$request->date; 
+      $data->time=$request->time; 
+      $data->message=$request->message; 
+ 
+         $data->save(); // save the $data object to the database using the save method  
+         return redirect()->back(); //redirect back to the previous page using the redirect function.
+ 
+     }
+
+
+     public function viewreservation(){
+      $data = reservation::all();
+      
+      return view('admin.dashboard.viewreservation', compact("data"));
+     }
 
 
 }

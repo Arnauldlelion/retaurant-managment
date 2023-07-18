@@ -38,12 +38,12 @@
 <div>
    <table bgcolor="black">
     <tr>
-      <th style="padding: 30px;">Food Name</th>
-      <th style="padding: 30px;">Price</th>
-      <th style="padding: 30px;">Description</th>
-      <th style="padding: 30px;">Image</th>
-      <th style="padding: 30px;">Action</th>
-      <th style="padding: 30px;">Action2</th>
+      <th bgcolor="sky blue" style="padding: 30px;">Food Name</th>
+      <th bgcolor="sky blue" style="padding: 30px;">Price</th>
+      <th bgcolor="sky blue" style="padding: 30px;">Description</th>
+      <th bgcolor="sky blue" style="padding: 30px;">Image</th>
+      <th bgcolor="sky blue" style="padding: 30px;">Action</th>
+      <th bgcolor="sky blue" style="padding: 30px;">Action2</th>
     </tr>
 
     @foreach($data as $data)
